@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity - OCS</title>
+    <link rel="icon" type="image/png" href="../icons/siemens-favicon.png">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- The above link is used with reveal class -->
+</head>
+
+<body class="bg-darkBlue font-siemensSans">
+    <nav class="navbar
+    h-16
+    mb-2
+    px-10
+    sticky
+    top-0
+    flex justify-between items-center
+    bg-black
+    border-b border-gray-50
+    backdrop-filter backdrop-blur-lg
+    z-10" id="gradient1">
+        <div class="branding grow">
+            <a href="index.html">
+                <img src="../icons/siemens-cobra.svg" alt="Siemens Logo" role="button">
+            </a>
+        </div>
+        <ul class="navlinks
+        h-full
+        flex justify-between items-center flex-row grow        
+        text-white
+        max-md:hidden">
+            <li><a href="links.html" class="hover:text-cyan">Links</a></li>
+            <li><a href="productivity.html" class="hover:text-cyan">Productivity</a></li>
+            <li class="px-10 py-4 
+            text-white 
+            hover:scale-105">
+
+                <div class="relative">
+                    <input type="text" class="searchBox searchInput 
+                        rounded-3xl px-4 py-2 pr-10 
+                        bg-gray-700 text-darkBlue 
+                        focus:outline-none focus:bg-white focus:text-white-900 z-10" placeholder="Search">
+
+                    <button type="submit" class="searchSubmit 
+                    absolute top-0 right-0 
+                    mt-2 mr-3 z-20">
+                        <img src="../icons/search-icon-black.svg" alt="">
+                    </button>
+                </div>
+            </li>
+            <!-- <li><a href="#"><img src="../icons/profile-icon-white.svg" alt="Profile" id="profileIcon"></a></li> -->
+        </ul>
+
+        <div class="hemburger_icon__container md:hidden">
+            <img role="button" src="../icons/menu.svg" alt="more" id="menu" onclick="toggleMenuIcon()">
+        </div>
+
+        <section class="mobile_nav_links__container
+        h-screen w-full
+        mt-16 pt-14 md:hidden  
+        fixed inset-0
+        bg-darkBlue
+        transform translate-x-[-100%] transition-all duration-500 sm:duration-300 ease-in-out 
+        z-0" id="mobileMenu">
+            <ul>
+                <li class="px-10 text-white hover:bg-blue"><a href="ocs.html" class="block w-full py-4">Home</a></li>
+                <li class="px-10 text-white hover:bg-blue"><a href="links.html" class="block w-full py-4">Links</a>
+                </li>
+                <li class="px-10 text-white hover:bg-blue"><a href="productivity.html"
+                        class="block w-full py-4">Productivity</a>
+                </li>
+                <li class="px-10 py-4 text-white hover:bg-blue hover:scale-105">
+                    <div class="flex justify-between flex-grow">
+                        <input type="text" class="searchBox searchInput 
+                             w-2/3 max-w-1/2
+                            px-4 py-2 pr-10 
+                            bg-gray-700 text-darkBlue 
+                            rounded-3xl 
+                            focus:outline-none focus:bg-white focus:text-white-900 
+                            sm:max-w-xs md:max-w-sm" placeholder="Search">
+                        <button type="submit" class="searchSubmit">
+                            <img src="../icons/search-icon-white.svg" alt="">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <!-- Move to Top button -->
+    <button id="moveToTopButton" class="hidden 
+        fixed bottom-8 right-8 p-3 
+        bg-lightBlue
+        rounded-full shadow border rounded-full border-gray
+        transition-transform duration-300 hover:scale-105 active:scale-90 focus:outline-none 
+        z-10">
+        <svg class="w-6 h-6 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+    </button>
+
+    <header class="mb-10 p-10 text-white revealLoad fade-left">
+        <h3 class="text-3xl text-center font-semibold">Productivity</h3>
+    </header>
+
+    <div class="container mx-auto mb-40 p-10 revealLoad fade-right">
+        <div class="grid gap-8 grid-cols-1">
+
+            <!-- Weekly Department Review -->
+            <div role="link"
+                data-href="https://siemensapc.sharepoint.com/:p:/r/teams/OCS-ContactLine/Shared%20Documents/General/Overall%20OCS/Weekly_Department_Review.pptx?d=we88d9ba087c6416285d2afc616a1b8cc&csf=1&web=1&e=gNNSw6"
+                class="group divLink mx-auto divLink w-2/3 md:w-1/2 xl:1/3 mb-2 bg-blue hover:bg-lightBlue cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
+                <div class="relative">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl text-white group-hover:text-cyan font-semibold mb-4">Weekly Department Review
+                    </h3>
+                    <div class="p-4 float-right"><img src="../icons/arrow-light.svg" alt="" class="arrow-icon">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Introduction -->
+            <div role="link"
+                data-href="https://siemensapc.sharepoint.com/:p:/r/teams/OCS-ContactLine/Shared%20Documents/General/Overall%20OCS/Team_Introduction.pptx?d=w22eb88918d11401aa5c49af0ab832eea&csf=1&web=1&e=DCRbGO"
+                class="group divLink mx-auto divLink w-2/3 md:w-1/2 xl:1/3 mb-2 bg-blue hover:bg-lightBlue cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
+                <div class="relative">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-xl text-white group-hover:text-cyan font-semibold mb-4">Team Introduction
+                    </h3>
+                    <div class="p-4 float-right"><img src="../icons/arrow-light.svg" alt="" class="arrow-icon">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- To add new Productivity Box, paste the Template-1 above this line -->
+        </div>
+    </div>
+
+    <!-- Embedding PPTs in the webpage -->
+    <ul class="flex flex-col justify-around items-center">
+
+        <!-- Embedding ppt Weekly Department Review -->
+        <li class="mb-40"><iframe
+                src="https://siemensapc.sharepoint.com/teams/OCS-ContactLine/_layouts/15/Doc.aspx?sourcedoc={e88d9ba0-87c6-4162-85d2-afc616a1b8cc}&amp;action=embedview&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1"
+                width="800px" height="500px" frameborder="0">This is an embedded <a target="_blank"
+                    href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                    href="https://office.com/webapps">Office</a></iframe>
+        </li>
+
+        <!-- Embedding ppt Team Introduction -->
+        <li class="mb-40">
+            <iframe
+                src="https://siemensapc.sharepoint.com/teams/OCS-ContactLine/_layouts/15/Doc.aspx?sourcedoc={22eb8891-8d11-401a-a5c4-9af0ab832eea}&amp;action=embedview&amp;wdAr=1.7777777777777777&amp;wdEaaCheck=1"
+                width="800px" height="500px" frameborder="0">This is an embedded <a target="_blank"
+                    href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank"
+                    href="https://office.com/webapps">Office</a></iframe>
+        </li>
+
+
+
+
+        <!-- To embed new ppt, paste the Template-2 above this line  -->
+    </ul>
+
+
+
+    <!-- Footer for other links -->
+    <footer class="p-10 text-white reveal fade-right">
+        <div>
+            <ul class="flex max-md:flex-col max-md:items-start md:flex-row md:justify-start 
+            text-base text-ellipsis font-thin tracking-wide">
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal.html" target="_blank">Corporate
+                        Information</a>
+                </li>
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal/privacy-notice.html" target="_blank">Privacy
+                        Policy</a>
+                </li>
+                <li class="mb-10 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal/terms-of-use.html" target="_blank">Terms of
+                        use</a>
+                </li>
+            </ul>
+            <ul class="flex max-md:flex-col max-md:items-start md:flex-row md:justify-start 
+            text-white text-base text-ellipsis font-thin tracking-wide">
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/global/en.html" target="_blank"><img src="../icons/web-icon.svg"
+                            class="inline">&nbsp;Siemens Global</a>
+                </li>
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal.html" target="_blank"><img
+                            src="../icons/web-icon.svg" class="inline">&nbsp;Siemens India</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const divLinks = document.querySelectorAll('.divLink');
+            divLinks.forEach((divLink) => {
+                divLink.addEventListener('click', function () {
+                    const url = divLink.getAttribute('data-href');
+                    window.open(url, '_blank');
+                });
+            })
+        });
+    </script>
+    <!-- We have added the above script so that link opens in new tab. No need to include div-link.js now -->
+    <!-- <script src="../javascripts/div-link.js"></script> -->
+    <script src="../javascripts/carousel.js"></script>
+    <script src="../javascripts/menu.js"></script>
+    <script src="../javascripts/move-to-top.js"></script>
+    <!-- <script src="../javascripts/profile-icon.js"></script> -->
+    <script src="../javascripts/reveal-revealLoad.js"></script>
+    <script src="../javascripts/searchbox.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- For carousel -->
+</body>
+
+</html>

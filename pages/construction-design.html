@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Design - OCS</title>
+    <link rel="icon" type="image/png" href="../icons/siemens-favicon.png">
+    <link rel="stylesheet" href="../output.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+</head>
+
+<body class="bg-darkBlue font-siemensSans">
+    <!-- Navigation Bar -->
+    <nav class="navbar
+    h-16
+    px-10
+    sticky
+    top-0
+    flex justify-between items-center
+    bg-black
+    border-b border-gray-50
+    backdrop-filter backdrop-blur-lg
+    z-10" id="gradient1">
+        <div class="branding grow">
+            <a href="index.html">
+                <img src="../icons/siemens-cobra.svg" alt="Siemens Logo" role="button">
+            </a>
+        </div>
+        <ul class="navlinks
+        h-full
+        flex justify-between items-center flex-row grow        
+        text-white md:text-sm
+        max-md:hidden">
+            <li><a href="services.html" class="hover:text-cyan">Services</a></li>
+            <li><a href="ocs.html" class="hover:text-cyan">OCS</a></li>
+            <li><a href="ocs-internal.html" target="_blank" class="hover:text-cyan">OCS-Internal</a></li>
+            <li><a href="experts.html" class="hover:text-cyan">Experts</a></li>
+            <li class="lg:px-10 py-4 
+            text-white 
+            hover:scale-105">
+                <div class="relative">
+                    <input type="text" class="searchBox searchInput 
+                        rounded-3xl px-4 py-2 lg:pr-10 
+                        bg-gray-700 text-darkBlue 
+                        focus:outline-none focus:bg-white focus:text-white-900 z-10" placeholder="Search">
+
+                    <button type="submit" class="searchSubmit 
+                    absolute top-0 right-0 
+                    mt-2 mr-3 z-20">
+                        <img src="../icons/search-icon-black.svg" alt="">
+                    </button>
+                </div>
+            </li>
+            <!-- <li><a href="#"><img src="../icons/profile-icon-white.svg" alt="Profile" id="profileIcon"></a></li> -->
+        </ul>
+
+        <div class="hemburger_icon__container md:hidden">
+            <img role="button" src="../icons/menu.svg" alt="more" id="menu" onclick="toggleMenuIcon()">
+        </div>
+
+        <section class="mobile_nav_links__container
+        h-screen w-full
+        mt-16 pt-14 md:hidden  
+        fixed inset-0
+        bg-darkBlue
+        transform translate-x-[-100%] transition-all duration-500 sm:duration-300 ease-in-out 
+        z-0" id="mobileMenu">
+            <ul>
+                <li class="px-10 text-white hover:bg-blue"><a href="index.html" class="block w-full py-4">Home</a></li>
+                <li class="px-10 text-white hover:bg-blue"><a href="services.html"
+                        class="block w-full py-4">Services</a></li>
+                <li class="px-10 text-white hover:bg-blue"><a href="ocs.html" class="block w-full py-4">OCS</a>
+                </li>
+                <li class="px-10 text-white hover:bg-blue"><a href="ocs-internal.html" target="_blank"
+                        class="block w-full py-4">OCS-Internal</a>
+                </li>
+                <li class="px-10 text-white hover:bg-blue"><a href="experts.html" class="block w-full py-4">Experts</a>
+                </li>
+                <li class="px-10 py-4 text-white hover:bg-blue hover:scale-105">
+                    <div class="flex justify-between flex-grow">
+                        <input type="text" class="searchBox searchInput 
+                             w-2/3 max-w-1/2
+                            px-4 py-2 pr-10 
+                            bg-gray-700 text-darkBlue 
+                            rounded-3xl 
+                            focus:outline-none focus:bg-white focus:text-white-900 
+                            sm:max-w-xs md:max-w-sm" placeholder="Search">
+                        <button type="submit" class="searchSubmit">
+                            <img src="../icons/search-icon-white.svg" alt="">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <!-- Move to Top button -->
+    <button id="moveToTopButton" class="hidden 
+        fixed bottom-8 right-8 p-3 
+        bg-lightBlue
+        rounded-full shadow border rounded-full border-gray
+        transition-transform duration-300 hover:scale-105 active:scale-90 focus:outline-none 
+        z-10">
+        <svg class="w-6 h-6 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+    </button>
+
+
+    <header
+        class="p-10 text-white text-base text-center text-ellipsis tracking-wide leading-7 font-thin overflow-hidden lg:text-lg revealLoad fade-left">
+        <h3 class="mb-20 text-3xl font-semibold">Construction Design Team</h3>
+        <p class="pb-4 text-2xl">
+            Here are the experts of OCS Team belonging to Construction Design.
+        </p>
+    </header>
+
+
+    <!-- Employee profiles -->
+    <div class="container mx-auto mb-80 p-8 revealLoad fade-right">
+        <div class="grid gap-8 grid-cols-1">
+            <!-- Avinash -->
+            <div
+                class="group bg-blue shadow-lg p-10 flex max-md:flex-col flex-row justify-around items-center hover:bg-lightBlue">
+                <div class="max-md:mb-10 md:mr-20 flex flex-col justify-center items-center">
+                    <!-- Profile Image -->
+                    <img src="../images/avinash.jpg" alt="Profile Image" class="w-48 h-48 object-cover rounded-full">
+
+                    <!-- Name, Email, and Phone Number -->
+                    <div class="mt-4 text-center">
+                        <h3 class="mb-2 text-xl text-white group-hover:text-cyan font-bold">Avinash Singh Panwar
+                        </h3>
+                        <div class="flex flex-col items-center">
+
+                            <span class="text-white">avinash.panwar@siemens.com</span>
+                        </div>
+                        <!-- <div class="flex flex-col items-center mt-2">
+            <span class="text-white">+91 60098 12121</span>
+        </div> -->
+                    </div>
+                </div>
+                <ul class="text-md text-white text-justify list-disc">
+                    <li class="mb-4">9 years+ of work experience</li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Inox India Pvt Limited:</span>
+                        <p class="font-semibold">Project Undertaken: Cryolines & Warmlines for ITER Org France</p>
+                        <ul class="pl-12 text-white text-justify list-decimal">
+                            <li class="mb-2">Overseas Assignment: Design Integration and Review at ITER Cadrache, France
+                            </li>
+                            <li class="mb-2">Involved in developing design calculations as well as 3D models and
+                                structuring the product</li>
+                            <li class="mb-2">Involved in critical design reviews to validate the product to the client
+                            </li>
+                            <li class="mb-2">Working withing the organization and client-side to get through various
+                                phases of Design Reviews</li>
+                            <li class="mb-2">3D design of Cryo-pipelines and routing them as per design rules and
+                                requirements of the customer</li>
+                            <li class="mb-2">Developing Fabrication drawings with release of all latest drawings to
+                                production, planning & Quality control department</li>
+                            <li class="mb-2">Ensuring all QCDs and change management</li>
+                        </ul>
+                    </li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Bombardier Transportation:</span>
+                        <p class="font-semibold">Project Undertaken: MRVC ICF EMU&MEMU, CRO, LOT, RRTS, Agra-Kanpur
+                            Metro,
+                            DMRC</p>
+                        <ul class="pl-12 text-white text-justify list-decimal">
+                            <li class="mb-2">Overseas Assignment: Development of Next Generation Auxiliary Converter for
+                                Medium Propulsion Rolling Stock</li>
+                            <li class="mb-2">Design and development of switch gear for EMUs and MEMUs</li>
+                            <li class="mb-2">Design of housings and enclosures, component placement with appropriate
+                                clearance and creepage requirements.</li>
+                            <li class="mb-2">Collaborated with suppliers/vendors for manufacture/fabrication of their
+                                products to be integrated to our product</li>
+                            <li class="mb-2">Involved in First article inspection, Vendor Development and Vendor
+                                Qualification</li>
+                            <li class="mb-2">Prototype testing at third party Lab for IP tightness test and Shock and
+                                Vibration</li>
+                            <li class="mb-2">Worked on Change management, Configuration Management and Obsolescence
+                                Management with working knowledge of Requirements management as well</li>
+                            <li class="mb-2">Actively involved for Design and Development of Next generation of
+                                Auxiliary converter for major Indian projects for rapid rail transport and Metros.</li>
+                        </ul>
+                    </li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Siemens Mobility:</span>
+                        <p class="font-semibold">Project Undertaken: Egypt HSL</p>
+                        <ul class="pl-12 text-white text-justify list-decimal">
+                            <li class="mb-2">Preparation of Assembly, Sub-assembly drawings and BOM for Overhead Contact
+                                line systems</li>
+                            <li class="mb-2">Preparation of FAT documents of OCL components</li>
+                            <li class="mb-2">Preparation of conceptual design of Depot layout for Retractable OCS</li>
+                        </ul>
+                    </li>
+                    <li class="mb-4"><span class="font-semibold">Technical Skills:</span> Product Design & Development
+                        using
+                        CAD and PDM Tools, Workpackage & resource planning, problem solving, Change & Configuration
+                        Management, Manufacturing/Fabrication Drawings with GD&T based on ISO standards, Electrical
+                        Harness Design with 3D CAD, Cross-country collaborations, Communication skills</li>
+                    <li class="mb-4"><span class="font-semibold">Software Proficiency: </span>CAD: Catia, Pro-E,
+                        SolidWorks,
+                        AutoCAD; PDM: Enovia, Teamcenter, EnggPDM-SAP; FEA tools: HyperWorks, Ansys; Requirements
+                        Managament Tool: DOORS; MS Office</li>
+                </ul>
+            </div>
+
+            <!-- Rajesh -->
+            <div
+                class="group bg-blue shadow-lg p-10 flex max-md:flex-col flex-row justify-around items-center hover:bg-lightBlue">
+                <div class="max-md:mb-10 md:mr-20 flex flex-col justify-center items-center">
+                    <!-- Profile Image -->
+                    <img src="../images/rajesh.jpg" alt="Profile Image" class="w-48 h-48 object-cover rounded-full">
+
+                    <!-- Name, Email, and Phone Number -->
+                    <div class="mt-4 text-center">
+                        <h3 class="mb-2 text-xl text-white group-hover:text-cyan font-bold">Rajesh Chaganti
+                        </h3>
+                        <div class="flex flex-col items-center">
+
+                            <span class="text-white">rajesh.chaganti@siemens.com</span>
+                        </div>
+                        <!-- <div class="flex flex-col items-center mt-2">
+                    <span class="text-white">+91 60098 12121</span>
+                </div> -->
+                    </div>
+                </div>
+                <ul class="text-md text-white text-justify list-disc">
+                    <li class="mb-4">8 years+ of work experience</li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Larsen & Toubro Transport
+                            Infrastructure:</span>
+                        <ul class="pl-12 text-white text-justify list-decimal">
+                            <li class="mb-2">Design and preparation of Pegging plans, Layout plans, Cross section
+                                drawings, Structure erection drawings, Clearance study & Profile drawings and As erected
+                                stage drawings</li>
+                            <li class="mb-2">Estimation of quantities related to Overhead equipment for Tender purpose
+                            </li>
+                            <li class="mb-2">Preparation of Basic Design drawings such as General arrangement drawings,
+                                Fabrication drawings, Assembly & Component drawings</li>
+                            <li class="mb-2">Material assessment related to Overhead equipment</li>
+                        </ul>
+                    </li>
+                    <li class="mb-4">Experience with <span class="font-semibold">KEC International Limited:</span></li>
+                    <ul class="pl-12 text-white text-justify list-decimal">
+                        <li class="mb-2">Prepared Pegging plans, Layout plans, Cross section drawings and Structure
+                            erection drawings for 130 TKM of EPC - 5 CORE Project (Gr.263 Dharmavaram - Pakala)</li>
+                        <li class="mb-2">Coordination with client (RE Secunderabad) for design approvals</li>
+                    </ul>
+                    </li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Siemens Mobility:</span>
+                        <ul class="pl-12 text-white text-justify list-decimal">
+                            <li class="mb-2">Preparation of Assembly, Sub-assembly drawings and BOM for Overhead Contact
+                                line systems</li>
+                            <li class="mb-2">Preparation of FAT documents of OCL components</li>
+                            <li class="mb-2">Preparation of conceptual design of Depot layout for Retractable OCS</li>
+                        </ul>
+                    </li>
+                    <li class="mb-4"><span class="font-semibold">Technical Skills:</span> Construction Design,
+                        Mechanical
+                        Engineering, Layout Design, Pre-Bid BOQ for OCS</li>
+                    <li class="mb-4"><span class="font-semibold">Software Proficiency: </span>Autodesk AutoCAD, MS
+                        Office,
+                        BMC Remedy</li>
+                </ul>
+            </div>
+
+
+            <!-- Swapnil -->
+            <div
+                class="group bg-blue shadow-lg p-10 flex max-md:flex-col flex-row justify-around items-center hover:bg-lightBlue">
+                <div class="max-md:mb-10 md:mr-20 flex flex-col justify-center items-center">
+                    <!-- Profile Image -->
+                    <img src="../images/swapnil.jpeg" alt="Profile Image" class="w-48 h-48 object-cover rounded-full">
+
+                    <!-- Name, Email, and Phone Number -->
+                    <div class="mt-4 text-center">
+                        <h3 class="mb-2 text-xl text-white group-hover:text-cyan font-bold">Swapnil Narule
+                        </h3>
+                        <div class="flex flex-col items-center">
+
+                            <span class="text-white">swapnil.narule@siemens.com</span>
+                        </div>
+                        <!-- <div class="flex flex-col items-center mt-2">
+                    <span class="text-white">+91 60098 12121</span>
+                </div> -->
+                    </div>
+                </div>
+                <ul class="text-md text-white text-justify list-disc">
+                    <li class="mb-4">6 years+ of work experience</li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Cradle Runways India Pvt Ltd.:</span>
+                        <ul class="pl-12 text-white text-justify list-decimal">
+                            <li class="mb-2">Understand the scope, performing design calculation, create drawings</li>
+                            <li class="mb-2">Technical discussion, coordination & follow-up with the sales team, clients
+                                & vendors to resolve issues in a timely and effective manner</li>
+                        </ul>
+                    </li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Oceaneering International
+                            Services:</span></li>
+                    <ul class="pl-12 text-white text-justify list-decimal">
+                        <li class="mb-2">Design equipment to match specifications with concept design, calculation and
+                            manufacturing</li>
+                        <li class="mb-2">Attaining kickoff meetings for the project and understanding requirements,
+                            specifications, and scope of work.</li>
+                        <li class="mb-2">Create & review design specifications, test procedures and calculation reports
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Oceaneering TechnipFMC:</span></li>
+                    <ul class="pl-12 text-white text-justify list-decimal">
+                        <li class="mb-2">Study project specifications and capture all the requirements in the
+                            deliverables</li>
+                        <li class="mb-2">Creates and reviews part reports, FAT reports, drawings, engineering
+                            specificationsand standards</li>
+                        <li class="mb-2">Conduct design reviews with different stakeholders</li>
+                        <li class="mb-2">Give inputs and technical guidance to Designers for drawing creation to
+                            accomplish project tasks</li>
+                    </ul>
+                    </li>
+                    <li class="mb-4">Experience with <span class="font-semibold">Siemens Mobility:</span>
+                        <ul class="pl-12 text-white text-justify list-decimal">
+                            <li class="mb-2">Preparation of concept and detailing with BOM</li>
+                        </ul>
+                    </li>
+                    <li class="mb-4"><span class="font-semibold">Software Proficiency: </span>Autodesk AutoCAD, Solid
+                        works,
+                        NX, Teamcenter, Vault, MS Office,
+                        Catia V5</li>
+                </ul>
+            </div>
+
+
+
+            
+
+            <!-- To add more employee profiles, paste the template above this line -->
+        </div>
+    </div>
+
+
+
+    <footer class="p-10 text-white reveal fade-right">
+        <div>
+            <ul class="flex max-md:flex-col max-md:items-start md:flex-row md:justify-start 
+            text-base text-ellipsis font-thin tracking-wide">
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal.html" target="_blank">Corporate Information</a>
+                </li>
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal/privacy-notice.html" target="_blank">Privacy
+                        Policy</a>
+                </li>
+                <li class="mb-10 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal/terms-of-use.html" target="_blank">Terms of
+                        use</a>
+                </li>
+            </ul>
+            <ul class="flex max-md:flex-col max-md:items-start md:flex-row md:justify-start 
+            text-white text-base text-ellipsis font-thin tracking-wide">
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/global/en.html" target="_blank"><img src="../icons/web-icon.svg"
+                            class="inline">&nbsp;Siemens Global</a>
+                </li>
+                <li class="mb-4 md:mr-16">
+                    <a href="https://www.siemens.com/in/en/general/legal.html" target="_blank"><img
+                            src="../icons/web-icon.svg" class="inline">&nbsp;Siemens India</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="../javascripts/menu.js"></script>
+    <script src="../javascripts/move-to-top.js"></script>
+    <!-- <script src="../javascripts/profile-icon.js"></script> -->
+    <script src="../javascripts/reveal-revealLoad.js"></script>
+    <script src="../javascripts/searchbox.js"></script>
+</body>
+
+</html>

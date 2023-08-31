@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCS - Contact Line - Internal</title>
+    <link rel="icon" type="image/png" href="../icons/siemens-favicon.png">
+    <link href="../output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- The above link is used with reveal class-->
+</head>
+
+<body class="font-siemensSans" id="gradient1">
+    <nav class="navbar
+    h-16
+    mb-2
+    px-10
+    sticky
+    top-0
+    flex justify-between items-center
+    bg-black
+    border-b border-gray-50
+    backdrop-filter backdrop-blur-lg
+    z-10 bg-darkBlue">
+        <div class="branding grow">
+            <a href="index.html">
+                <img src="../icons/siemens-cobra.svg" alt="Siemens Logo" role="button">
+            </a>
+        </div>
+        <ul class="navlinks
+        h-full
+        flex justify-between items-center flex-row grow        
+        text-white
+        max-md:hidden">
+            <li><a href="links.html" class="hover:text-cyan">Links</a></li>
+            <li><a href="productivity.html" class="hover:text-cyan">Productivity</a></li>
+            <li class="px-10 py-4 
+            text-white 
+            hover:scale-105">
+                <div class="relative">
+                    <input type="text" class="searchBox searchInput 
+                        rounded-3xl px-4 py-2 pr-10 
+                        bg-gray-700 text-darkBlue 
+                        focus:outline-none focus:bg-white focus:text-white-900 z-10" placeholder="Search">
+
+                    <button type="submit" class="searchSubmit 
+                    absolute top-0 right-0 
+                    mt-2 mr-3 z-20">
+                        <img src="../icons/search-icon-black.svg" alt="">
+                    </button>
+                </div>
+            </li>
+            <!-- <li><a href="#"><img src="../icons/profile-icon-white.svg" alt="Profile" id="profileIcon"></a></li> -->
+        </ul>
+
+        <div class="hemburger_icon__container md:hidden">
+            <img role="button" src="../icons/menu.svg" alt="more" id="menu" onclick="toggleMenuIcon()">
+        </div>
+
+        <section class="mobile_nav_links__container
+        h-screen w-full
+        mt-16 pt-14 md:hidden  
+        fixed inset-0
+        bg-darkBlue
+        transform translate-x-[-100%] transition-all duration-500 sm:duration-300 ease-in-out 
+        z-0" id="mobileMenu">
+            <ul>
+                <li class="px-10 text-white hover:bg-blue"><a href="ocs.html" class="block w-full py-4">Home</a></li>
+                <li class="px-10 text-white hover:bg-blue"><a href="links.html" class="block w-full py-4">Links</a></li>
+                <li class="px-10 text-white hover:bg-blue"><a href="productivity.html"
+                        class="block w-full py-4">Productivity</a>
+                </li>
+                <li class="px-10 py-4 text-white hover:bg-blue hover:scale-105">
+                    <div class="flex justify-between flex-grow">
+                        <input type="text" class="searchBox searchInput 
+                             w-2/3 max-w-1/2
+                            px-4 py-2 pr-10 
+                            bg-gray-700 text-darkBlue 
+                            rounded-3xl 
+                            focus:outline-none focus:bg-white focus:text-white-900 
+                            sm:max-w-xs md:max-w-sm" placeholder="Search">
+                        <button type="submit" class="searchSubmit">
+                            <img src="../icons/search-icon-white.svg" alt="">
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+    <!-- Move to Top button -->
+    <button id="moveToTopButton" class="hidden 
+        fixed bottom-8 right-8 p-3 
+        bg-lightBlue
+        rounded-full shadow border rounded-full border-gray
+        transition-transform duration-300 hover:scale-105 active:scale-90 focus:outline-none 
+        z-10">
+        <svg class="w-6 h-6 text-cyan" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
+        </svg>
+    </button>
+
+
+    <header class="px-10 pt-18 md:custom-height flex max-md:flex-col md:flex-row justify-around md:items-center">
+        <div class="max-md:mb-40 md:mr-40 custom-height flex flex-col justify-center items-start revealLoad fade-left">
+            <h1 class="text-9xl font-extrabold font-mono text-gray">OCS</h1>
+            <h2 class="text-6xl font-extrabold font-mono text-black">Contact</h2>
+            <h2 class="text-6xl font-extrabold font-mono text-black">Line</h2>
+        </div>
+        <section class="text-white revealLoad fade-right max-md:mb-40 grow">
+            <div>
+                <div class="container mx-auto">
+                    <div class="flex max-xl:flex-col xl:flex-row justify-around items-center">
+
+                        <!-- Important Links -->
+                        <div role="link" href="links.html"
+                            class="group max-md:w-full md:max-lg:w-2/3 lg:max-xl:w-1/2 max-xl:mb-10 bg-blue hover:bg-lightBlue cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
+                            <div class="relative">
+                                <img src="../images/links.avif" alt="Image - Imp. Links"
+                                    class="max-xl:hidden w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Important Links
+                                </h3>
+                                <div class="p-4 float-right"><img src="../icons/arrow-light.svg" alt=""
+                                        class="arrow-icon">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Productivity -->
+                        <div role="link" href="productivity.html"
+                            class="group max-md:w-full md:max-lg:w-2/3 lg:max-xl:w-1/2 max-xl:mb-10 bg-blue hover:bg-lightBlue cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
+                            <div class="relative">
+                                <img src="../images/productivity.jpeg" alt="Image - Productivity"
+                                    class="max-xl:hidden w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+                            </div>
+                            <div class="p-8">
+                                <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">Productivity
+                                </h3>
+                                <div class=" p-4 float-right"><img src="../icons/arrow-light.svg" alt=""
+                                        class="arrow-icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+        <div class="md:hidden scroll-to-more left-1/2 bottom-10 flex justify-center items-center absolute bounceAnimation"
+            id="scrollArrowContainer">
+            <!-- SVG arrow -->
+            <img src="../icons/arrow-dark.svg" alt="" class="md:hidden rotate-90">
+        </div>
+    </header>
+
+
+
+
+
+    <script src="../javascripts/arrow.js"></script>
+    <script src="../javascripts/menu.js"></script>
+    <script src="../javascripts/move-to-top.js"></script>
+    <!-- <script src="../javascripts/profile-icon.js"></script> -->
+    <script src="../javascripts/reveal-revealLoad.js"></script>
+    <script src="../javascripts/scroll-arrow-container.js"></script>
+    <script src="../javascripts/searchbox.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> <!-- For carousel -->
+</body>
+
+</html>
