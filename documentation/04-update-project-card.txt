@@ -1,0 +1,61 @@
+Update Project Cards on the ocs.html Page:
+--------------------------------------------
+
+Video Guide: https://drive.google.com/drive/folders/19galhAfEeZhTyupXjYMvtgl1eJ7xtpHT?usp=drive_link
+
+To add new Project Card, please proceed with the following instructions:
+
+1. Copy the provided template given below.
+2. Go to pages -> ocs.html
+3. Paste the template in the required place in ocs.html. [Refer to the above video if needed]
+4. Write project title within comments.
+5. Edit the title within the <h3> tag.
+6. Suppose if the title is ABC, then create a file 'abc.html' in 'pages' folder.
+7. Then in the template you have copy-pasted, write 'abc.html' inside href.
+8. Save an image in 'images' folder with appropriate filename.
+9. Put the image filename in <img> tag.
+10. Ctrl+S to save the file. Refresh the webpage to check if it works fine.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Template: 
+
+ <!-- WRITE_PROJECT_TITLE_HERE -->
+<div role="link" href="INSERT_REFERENCE_HTML_FILE_HERE"
+    class="group divLink bg-blue hover:bg-lightBlue cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
+    <div class="relative">
+        <img src="../images/INSERT_IMAGE_FILENAME_HERE" alt="Image - WRITE_PROJECT_TITLE_HERE"
+            class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+    </div>
+    <div class="p-8">
+        <h3 class="text-xl text-white group-hover:text-cyan font-bold mb-4">WRITE_PROJECT_TITLE_HERE
+        </h3>
+        <div class=" p-4 float-right"><img src="../icons/arrow-light.svg" alt="" class="arrow-icon">
+        </div>
+    </div>
+</div>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To update a project card, follow these steps:
+
+1. Go to pages -> ocs.html
+2. Navigate to the line where code for that particular Project card starts.
+3. Make necessary changes as per your wish.
+4. CTRL+S to save the file. Refresh the webpage to check if everything works fine.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To delete a Project card, follow these steps:
+
+1. Go to pages -> services.html
+2. Navigate to the line where code for that particular Project starts.
+3. Check where the code ends. You can do this by observing the above template also.
+4. To delete the Project card, remove those lines.
+5. Be careful while removing lines. One mistake can disrupt the whole alignment of the webpage.
+6. Delete the image associated with that particular project card from 'images' folder.
+7. CTRL+S to save the file. Refresh the webpage to check if everything works fine.
+
+8. If the project card is no longer in use, you can delete its corresponding project-description page also.
+
+-------------------------------------------------------------------------------------------------------------------------

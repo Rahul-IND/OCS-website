@@ -1,0 +1,73 @@
+Updating Productivity Box on the productivity.html Page:
+-------------------------------------------------------
+
+Video Guide: https://drive.google.com/drive/folders/19galhAfEeZhTyupXjYMvtgl1eJ7xtpHT?usp=drive_link
+
+To add new Productivity Box, follow these steps:
+
+1. Copy the provided template given below.
+2. Go to pages -> productivity.html
+3. Paste the template in the required place in productivity.html
+4. Edit the title within comments.
+5. Edit the title within the <h3> tag.
+6. Open MS Teams and double click the desired ppt.
+    The ppt will be opened in web mode then. {Do note that ppt should be opened in WEB MODE to copy link} 
+    Click Share
+    Copy Link
+7. Paste the link within the <div> tag. It should direct to ppt in new tab.
+8. Ctrl+S to save the file. Refresh the webpage to check if it works fine.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Template-1: 
+
+<!-- WRITE_PPT_TITLE_HERE -->
+<div role="link"
+    data-href="INSERT_PPT_LINK_HERE"
+    class="group divLink mx-auto divLink w-2/3 md:w-1/2 xl:1/3 mb-2 bg-blue hover:bg-lightBlue cursor-pointer shadow-lg  overflow-hidden hover:shadow-xl transition duration-500">
+    <div class="relative">
+    </div>
+    <div class="p-8">
+        <h3 class="text-xl text-white group-hover:text-cyan font-semibold mb-4">WRITE_PPT_TITLE_HERE
+        </h3>
+        <div class="p-4 float-right"><img src="../icons/arrow-light.svg" alt="" class="arrow-icon">
+        </div>
+    </div>
+</div>
+
+
+-------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
+
+To embed a ppt in the webpage, follow these steps:
+
+1. Copy the provided template given below.
+2. Go to pages -> productivity.html
+3. Paste the template in the required place in productivity.html
+4. Edit the title within comments.
+6. Open MS Teams and double click the desired ppt.
+    The ppt will be opened in web mode then. {Do note that ppt should be opened in WEB MODE to copy link} 
+    Click File
+    Click Share
+    If Embed button is available, click Embed.
+    Set width = 800px, height = 500px   [You can set other values too]
+    Copy the Link
+
+    [If Embed option is not available, it is due to access restrictions.
+     The ppt can't be embedded in this case]
+
+7. Paste the link within the <li> tag.
+8. Ctrl+S to save the file. Refresh the webpage to check if it works fine.
+9. In result, you will see that the ppt is embedded in the webpage.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+Template-2:
+
+<!-- Embedding ppt Weekly Department Review -->
+<li class="mb-40">INSERT_THE_LINK_GENERATED_FROM_POWERPOINT</li>
+
+
+-------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,37 @@
+Setting up the Development Environment
+--------------------------------------
+
+Video Guide: https://drive.google.com/drive/folders/19galhAfEeZhTyupXjYMvtgl1eJ7xtpHT?usp=drive_link
+
+Preferred IDE: VS Code  [https://code.visualstudio.com/]
+Preferred Browser: Google Chrome    [https://www.google.com/intl/en_in/chrome/]
+VS Code Extensions: Live Server
+
+----------------------------------------------------------------------------------------------
+
+Tailwind installation: https://tailwindcss.com/docs/installation
+[If you are using Company laptop, ignore the above link. Installation process is described in following section.]
+
+Learn Tailwind CSS: https://tailwindcss.com/docs/utility-first
+
+----------------------------------------------------------------------------------------------
+
+To make any changes to the website, follow these steps:
+
+1. Press and hold SHIFT key, then right click on the folder 'OCS-website'
+2. Click 'Open PowerShell window here'
+3. Paste the following line in Windows PowerShell
+     ./tailwindcss -i input.css -o output.css --watch
+    
+    Output: Rebuilding...
+            Done in XYZ ms.
+    The PowerShell should be running in the background whenever you are making any changes to the website.
+4. Open the folder 'OCS-website' in VS code
+5. Now you are ready to do any modifications you want!
+6. How to update a webpage? This is shown in subsequent documentation files.
+
+-----------------------------------------------------------------------------------------------
+
+[Ignore]
+
+Use Tailwind CSS without Node.js:  https://dev.to/kachidk/tailwind-standalone-cli-use-tailwind-css-without-nodejs-2bfn

@@ -1,0 +1,9 @@
+* Before making any changes to the folder 'OCS-website', it is recommended to keep a copy of the folder prior.
+
+* Whenever you create a new html file, the filename should be written in tailwind.config.js
+
+* While making any modifications to the website, powershell should be running in the background
+
+    This command should be executed: ./tailwindcss -i input.css -o output.css --watch
+
+* It is recommended to name the filenames in smallcase; seperated by hyphens

@@ -1,0 +1,96 @@
+Update Services on the services.html Page:
+------------------------------------------
+
+
+Video Guide: https://drive.google.com/drive/folders/19galhAfEeZhTyupXjYMvtgl1eJ7xtpHT?usp=drive_link
+
+Let us assume, we have to add new expert in layout-Design
+To add new experts, follow these steps:
+
+1. Copy the provided template given below.
+2. Go to pages -> layout-design.html    [Or construction-design.html / structural-engineering.html as per requirement]
+3. Paste the template in the required place in layout-design.html. [Or in construction-design.html / structural-engineering.html]
+4. Edit the Employee Name in comments
+5. Edit Employee Name within the <h3> tag.
+6. Edit Employee work email.
+7. Edit the text content within the <ul> and <li> tag as per employee profile.
+8. Save Employee's profile picture in 'images' folder. Name the image as employee's first name
+9. In the copied template, insert the image filename in <img> tag
+10. Ctrl+S to save the file. Refresh the webpage to check if it works fine.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Template: 
+
+<!-- WRITE_EMPLOYEE_NAME_HERE -->
+<div
+    class="group bg-blue shadow-lg p-10 flex max-md:flex-col flex-row justify-around items-center hover:bg-lightBlue">
+    <div class="max-md:mb-10 md:mr-20 flex flex-col justify-center items-center">
+        <!-- Profile Image -->
+        <img src="../images/INSERT_IMAGE_FILENAME_HERE" alt="Profile - WRITE_EMPLOYEE_NAME_HERE" class="w-48 h-48 object-cover rounded-full">
+
+        <!-- Name, Email, and Phone Number -->
+        <div class="mt-4 text-center">
+            <h3 class="mb-2 text-xl text-white group-hover:text-cyan font-bold">WRITE_EMPLOYEE_NAME_HERE
+            </h3>
+            <div class="flex flex-col items-center">
+
+                <span class="text-white">WRITE_EMPLOYEE_MAIL_ID_HERE</span>
+            </div>
+            <!-- <div class="flex flex-col items-center mt-2">
+                <span class="text-white">+91 60098 12121</span>
+            </div> -->
+        </div>
+    </div>
+    <ul class="text-md text-white text-justify list-disc">
+        <li class="mb-4">5 years+ of work experience</li>
+        <li class="mb-4">Experience with <span class="font-semibold">Alstom Transport India Limited</span>:
+            <ul class="pl-12 text-white text-justify list-decimal">
+                <li class="mb-2">System & basic design of 25kV AC, Unregulated OCS for Mayan Train Project
+                </li>
+                <li class="mb-2">Worked on the detail design of 2x25 kV OCS for EDFC CP-104</li>
+                <li class="mb-2">Prepared design modules for client trainings, explaining all the distinct
+                    features of EDFC CP-104 project.</li>
+                <li class="mb-2">25 kV AC Mass Transit - Flexible & Rigid Catenary Systems (Mumbai Metro
+                    Line 3 - MML3)</li>
+                <li class="mb-2">Involved in the structural design of OCS poles, cantilevers and portals for
+                    MML3</li>
+                <li class="mb-2">Working knowledge of different international standards and design codes:
+                    European codes (EN), IEEE & International Electrotechnical Commission (IEC) standards
+                </li>
+            </ul>
+        </li>
+        <li class="mb-4">Experience with <span class="font-semibold">Siemens Mobility</span>:
+            <ul class="pl-12 text-white text-justify list-decimal">
+                <li class="mb-2">Imparted Contact Lines training to the Graduate Engineering Trainees</li>
+            </ul>
+        </li>
+        <li class="mb-4"><span class="font-semibold">Technical Skills:</span> Flexible OCL design, rigid
+            catenary design, bid engineering, OCL structural design</li>
+        <li class="mb-4"><span class="font-semibold">Software Proficiency:</span> Autodesk AutoCAD, Bentley
+            'Open
+            Rail Overhead Line Designer', Bentley 'StaadPro V8i', python, VBA, MS Office</li>
+    </ul>
+</div>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To update experts details, follow these steps:
+
+1. Go to pages -> layout-design.html    [Or construction-design.html, structural-engineering.html]
+2. Navigate to the line where code for that particular Employee Profile starts.
+3. Make necessary changes as per your wish.
+4. CTRL+S to save the file. Refresh the webpage to check if everything works fine.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To delete experts details, follow these steps:
+
+1. Go to pages -> layout-design.html    [Or construction-design.html, structural-engineering.html]
+2. Navigate to the line where code for that particular Employee Profile starts.
+3. Check where the code ends. You can do this by observing the above template also.
+4. To delete the Profile, remove those lines.
+5. Be careful while removing lines. One mistake can disrupt the whole alignment of the webpage.
+6. CTRL+S to save the file. Refresh the webpage to check if everything works fine.
+
+-------------------------------------------------------------------------------------------------------------------------

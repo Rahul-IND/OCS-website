@@ -1,0 +1,63 @@
+Update links on the links.html Page:
+------------------------------------------
+
+Video Guide: https://drive.google.com/drive/folders/19galhAfEeZhTyupXjYMvtgl1eJ7xtpHT?usp=drive_link
+
+To edit links, follow these steps:
+
+2. Go to pages -> links.html
+3. Navigate to particular <h3> to edit Heading
+4. Navigate to particular <li> to edit Link
+5. Insert reference link in corresponding href
+6. Omit those <div> tags which are not necessary
+10. Ctrl+S to save the file. Refresh the webpage to check if it works fine.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+To add new heading & links, follow these steps:
+
+1. Copy the provided template given below.
+2. Go to pages -> links.html
+3. Paste the template at desired location
+3. Edit heading in <h3>
+4. Edit link text in <li>
+5. Insert reference link in corresponding href
+6. Omit those <li> tags which are not necessary
+10. Ctrl+S to save the file. Refresh the webpage to check if it works fine.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Template: 
+
+ <!-- Box XX -->
+    <div
+        class="h-auto bg-blue text-white  ease hover:bg-lightBlue hover:border-1 hover:border-black hover:text-cyan animate-on-scroll">
+        <h3 class="ml-5 mt-5 mb-4 text-xl font-semibold">WRITE_HEADING_HERE</h3>
+        <ul>
+            <li class="pl-5 py-2.5 flex items-center hover:bg-blue">
+                <a href="INSERT_REFERENCE_LINK_HERE" class="w-full text-base text-white">WRITE_LINK_TEXT_HERE</a>
+            </li>
+            <li class="pl-5 py-2.5 flex items-center hover:bg-blue">
+                <a href="INSERT_REFERENCE_LINK_HERE" class="w-full text-base text-white">WRITE_LINK_TEXT_HERE</a>
+            </li>
+            <li class="pl-5 py-2.5 flex items-center hover:bg-blue">
+                <a href="INSERT_REFERENCE_LINK_HERE" class="w-full text-base text-white">WRITE_LINK_TEXT_HERE</a>
+            </li>
+            <li class="pl-5 py-2.5 flex items-center hover:bg-blue">
+                <a href="INSERT_REFERENCE_LINK_HERE" class="w-full text-base text-white">WRITE_LINK_TEXT_HERE</a>
+            </li>
+        </ul>
+    </div>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To delete a Link Box, follow these steps:
+
+1. Go to pages -> links.html
+2. Navigate to the <div> where code for that particular link box starts.
+3. Check where the code ends. You can do this by observing the above template also.
+4. To delete the Link Box, remove the whole <div> box.
+5. Be careful while removing lines. One mistake can disrupt the whole alignment of the webpage.
+6. CTRL+S to save the file. Refresh the webpage to check if everything works fine.
+
+-------------------------------------------------------------------------------------------------------------------------

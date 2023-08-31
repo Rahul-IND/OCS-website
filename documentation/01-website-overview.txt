@@ -1,0 +1,61 @@
+Overview of the Website
+-----------------------
+
+Video Guide: https://drive.google.com/drive/folders/19galhAfEeZhTyupXjYMvtgl1eJ7xtpHT?usp=drive_link
+
+----------------------------------------------------------------------------------------------
+
+OCS-Contact Line Website
+Last Updated: 01-09-2023
+Developed by: Rahul Das [Summer Intern]
+Contact Email: rahuldasjec.cse@gmail.com
+Internship Duration: July 3, 2023 to September 1, 2023
+Guided by: Bhagwat Sharma, Suneel
+Technologies used: HTML, CSS, Tailwind CSS, javascript (Some code has been taken from ChatGPT)
+
+The website's codebase could have been more efficient if other technologies were used
+However, due to limited resources & to make it easily modifiable by people from non-CS background, the above technologies seemed to be the best option.
+
+-----------------------------------------------------------------------------------------------
+
+# The website is made mainly for following purposes-
+1. To present Team details like delivered projects, team's expertise etc. [EXTERNAL USAGE]
+2. To use it in team meetings instead of ppts showing team productivity, project history etc. [INTERNAL USAGE]
+3. To include reference links, resources required while working on a project.
+
+-----------------------------------------------------------------------------------------------
+
+
+# This file serves the purpose of providing a better understanding of the file structure and code.
+
+There are six folders viz.
+1. documentation -> 
+2. fonts -> Contains the file Siemens_Sans_Roman.ttf 
+            This font is used in the whole website.
+3. icons -> Contains all the icons (as well as logos) used in the website
+            Most of them are in svg format
+4. images -> Contains all the images used throughout the website
+5. javascripts -> This folder contains all the JavaScript files. 
+                    Each JavaScript file is dedicated to a specific component. 
+                    Whenever a component is used on a webpage, the corresponding JavaScript file is imported to provide its functionality.
+6. pages -> Contains all the HTML files
+
+
+CSS files-
+1. input.css -> This file is used to write custom CSS as per developer's need
+2. output.css -> This is the final compiled CSS file that includes both custom styles and the generated utility classes from Tailwind CSS. This file is linked to in HTML files to apply the styles to elements.
+
+JS file -
+1. tailwind.config.js -> This is a configuration file used to customize and control various aspects of the framework's (Tailwind's) behavior. This file allows to fine-tune settings, add new utility classes, configure colors, typography, spacing, and more.
+
+
+README.md -> Acts as a guide to create shortcut
+
+-----------------------------------------------------------------------------------------------
+
+NOTE:
+Do not delete any files from the folder
+Description of rest of the files is out of the scope of this documentation
+Use of those files is specified in rest of the documentation guides
+
+-----------------------------------------------------------------------------------------------

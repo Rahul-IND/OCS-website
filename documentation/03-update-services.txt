@@ -1,0 +1,68 @@
+Update Services on the services.html Page:
+------------------------------------------
+
+Video Guide: https://drive.google.com/drive/folders/19galhAfEeZhTyupXjYMvtgl1eJ7xtpHT?usp=drive_link
+
+To add new Services, follow these steps:
+
+1. Copy the provided template given below.
+2. Go to pages -> services.html
+3. Paste the template in the required place in services.html. [Refer to the above video if needed]
+4. Edit the title within comments
+5. Edit the title within the <h3> tag.
+6. Edit the text content within the <p> tag as needed.
+7. Modify the link within the <a> tag. It should direct to an appropriate page on the official Siemens India website.
+8. Save an image in 'images' folder with appropriate filename.
+9. Put the image filename in <img> tag.
+10. Ctrl+S to save the file. Refresh the webpage to check if it works fine.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Template: 
+
+<!-- WRITE_SERVICE_TITLE_HERE -->
+<div
+    class="group divLink bg-blue hover:bg-lightBlue shadow-lg overflow-hidden hover:shadow-xl transition duration-500">
+    <a href="INSERT_REFERENCE_LINK_HERE"
+        target="_blank">
+        <div class="relative">
+            <img src="../images/INSERT_IMAGE_FILENAME_HERE" alt="Image - WRITE_SERVICE_TITLE_HERE"
+                class="w-full h-48 object-cover transition-transform transform duration-500 group-hover:scale-110">
+        </div>
+        <div class="p-8">
+            <h3 class="text-xl text-white group-hover:text-cyan font-semibold mb-4">WRITE_SERVICE_TITLE_HERE</h3>
+            <p class="text-md text-white">
+                <!-- YOUR_TEXT_CONTENT_HERE -->
+                Elevate efficiency and reliability with cutting-edge contact line solutions. Our Sicat
+                family, combined with secure, corrosion-resistant components, guarantees maximum
+                performance for rail electrification, enhancing mass transit and main-line railways.
+            </p>
+            <div class="relative py-8">
+                <img src="../icons/arrow-light.svg" alt="" class="arrow-icon absolute bottom-2 right-2">
+            </div>
+        </div>
+    </a>
+</div>
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To update a service, follow these steps:
+
+1. Go to pages -> services.html
+2. Navigate to the line where code for that particular Service starts.
+3. Make necessary changes as per your wish.
+4. CTRL+S to save the file. Refresh the webpage to check if everything works fine.
+
+-------------------------------------------------------------------------------------------------------------------------
+
+To delete a service, follow these steps:
+
+1. Go to pages -> services.html
+2. Navigate to the line where code for that particular Service starts.
+3. Check where the code ends. You can do this by observing the above template also.
+4. To delete the Service, remove those lines.
+5. Delete the image associated with that piece of code from 'images' folder.
+6. Be careful while removing lines. One mistake can disrupt the whole alignment of the webpage.
+7. CTRL+S to save the file. Refresh the webpage to check if everything works fine.
+
+-------------------------------------------------------------------------------------------------------------------------
