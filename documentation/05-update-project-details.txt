@@ -160,19 +160,19 @@ Template:
         <h3 class="text-3xl mb-10 text-center font-semibold">Project Description</h3>
         <section>
             <ul>
-                <li class="mb-4"><span class="text-lg font-semibold">Project Title: </span>WRITE_PROJECT_TITLE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Project Overview: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Project Objectives: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Project timeline: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Team members & Responsibilites: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Budget & Resources: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Methodology & Apporoach: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Risks & Mitigation strategies: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Success Criteria: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">References & Supporting Material: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Contact Info: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Design speed: </span>WRITE_HERE</li>
-                <li class="mb-4"><span class="text-lg font-semibold">Nominal voltage and frequency: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Project Title: </span>WRITE_PROJECT_TITLE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Project Overview: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Project Objectives: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Project timeline: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Team members & Responsibilites: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Budget & Resources: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Methodology & Apporoach: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Risks & Mitigation strategies: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Success Criteria: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">References & Supporting Material: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Contact Info: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Design speed: </span>WRITE_HERE</li>
+                <li class="mb-4 text-white text-base text-ellipsis tracking-wide leading-7 font-thin"><span class="text-lg font-semibold">Nominal voltage and frequency: </span>WRITE_HERE</li>
             </ul>
         </section>
     </section>
